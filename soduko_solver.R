@@ -26,7 +26,7 @@ for(i in 1:number)
   sudoku_board[rowno[i],columnno[i]]<<-value[i]
 }
 }
-input()
+input()   #manually entering the the data 
 24
 
 2
@@ -128,7 +128,7 @@ input()
 initiate()
 print(sudoku_board)
 
-constraint<-function(c,row,column)
+constraint<-function(c,row,column)    # all constraint
 {   
   for(i in 1:9)
   { if(is.na(sudoku_board[i,column])==FALSE && sudoku_board[i,column]==c)
